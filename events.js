@@ -20,6 +20,9 @@ window.EMORDES_EVENTS = [
     links: [{label:"FAQ",url:"https://www.festival-cannes.com/en/faq/"}], trip: "cannes.html" },
   { id: "cannes-passport", title: "Passport + ETIAS check", start: "2027-03-01", category: "travel", draft: true,
     notes: "Passport valid 3+ months past May 19, 2027. Check ETIAS (EU travel authorization) status.", trip: "cannes.html" },
+  { id: "songkran", title: "Songkran (Thai New Year)", start: "2027-04-13", end: "2027-04-15", category: "personal",
+    location: "Thailand (Bangkok Silom, Chiang Mai)", notes: "Fun stuff: nationwide water festival. Celebrations often run longer in Chiang Mai. Trip not booked.",
+    links: [{label:"Tourism Thailand",url:"https://www.tourismthailand.org/"}] },
   { id: "cannes-lineup", title: "Cannes lineup announced", start: "2027-04-15", category: "travel", draft: true,
     notes: "Official selection announced in April 2027 (exact date TBA)." }
 ];
