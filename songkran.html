@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SONGKRAN 2027 · EMORDES CALENDAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="top"><a href="index.html" aria-label="Emordes Calendar home"><img src="wordmark.png" alt="emordes"></a>
+<nav aria-label="Main"><a href="index.html">Calendar</a><a href="cannes.html" >Cannes 2027</a><a href="songkran.html" aria-current="page">Songkran 2027</a></nav></header>
+<main>
+<section class="hero"><p class="meta">Trip file 002 · <span class="draftb">DRAFT / SUGGESTED</span> · Songkran, Thai New Year · Apr 13–15, 2027</p>
+<h1>Songkran<br><em>2027</em></h1>
+<p class="meta" style="margin-top:14px">Countdown to wheels down · Apr 10, 2027</p>
+<div class="count" aria-live="off"><div id="cd-d">—<small>Days</small></div><div id="cd-h">—<small>Hours</small></div><div id="cd-m">—<small>Minutes</small></div></div>
+<p style="margin-top:22px;max-width:640px;line-height:1.6;color:#ccc">Two weeks, Apr 10–23. Week one in Chiang Mai for the most intense Songkran in Thailand, week two in Bangkok for Silom nightlife. Plan via Joanne. Nothing booked yet.</p>
+<div class="ctrl" style="margin-top:16px"><button id="addTrip">Download trip .ics</button><a class="btn" id="gTrip" target="_blank" rel="noopener">+ Google Calendar</a><a class="btn" href="index.html?m=2027-04">See in calendar →</a></div>
+</section>
+<section class="sec"><h2>Itinerary <span>/ Draft</span></h2><div class="days">
+<article><span class="meta">Apr 10–12 · Chiang Mai</span><h3>Arrive + temples</h3><p>Land, settle inside/near the old city. Wat Phra Singh. Saturday Wualai market (Apr 10), Sunday Walking Street (Apr 11).</p></article>
+<article><span class="meta">Apr 13–15 · Chiang Mai</span><h3>Songkran</h3><p>Old city moat water fight zone, all day. Waterproof pouch, quick-dry clothes, water gun.</p></article>
+<article><span class="meta">Apr 15–16 · Chiang Mai</span><h3>Recover</h3><p>Maybe an ethical elephant sanctuary (~$70–100). Night markets.</p></article>
+<article><span class="meta">Apr 16 · CNX → BKK</span><h3>Fly to Bangkok</h3><p>Domestic flight (~$40–80). Check in near Silom.</p></article>
+<article><span class="meta">Apr 16–22 · Bangkok</span><h3>Silom nights</h3><p>Silom Soi 4: Stranger Bar, Balcony, drag shows. LesHi Bar, Goddess Bar. Leftover Songkran water fights on Silom Road.</p></article>
+<article><span class="meta">Apr 23 · BKK → SFO</span><h3>Fly home</h3><p>Round trip estimate $700–1,200.</p></article>
+</div></section>
+<section class="sec two">
+<div><h2>Checklist <span>/ Deadlines</span></h2><div class="check" id="cl"></div><p class="meta" style="margin-top:10px">Saved in this browser. Deadlines are suggestions.</p></div>
+<div><h2>Budget <span>/ Estimate</span></h2>
+<div class="ctrl"><button type="button" id="t-mid" aria-pressed="true">Mid-range</button><button type="button" id="t-com" aria-pressed="false">Comfortable</button></div><br>
+<form class="calc" id="calc">
+<label for="b-cl">Chiang Mai lodging / night ×6<input id="b-cl" type="number" min="0"></label>
+<label for="b-bl">Bangkok lodging / night ×7<input id="b-bl" type="number" min="0"></label>
+<label for="b-fo">Food / day ×14<input id="b-fo" type="number" min="0"></label>
+<label for="b-ni">Nightlife total<input id="b-ni" type="number" min="0"></label>
+<label for="b-ac">Activities (sanctuary etc)<input id="b-ac" type="number" min="0"></label>
+<label for="b-tr">Local transport / Grab<input id="b-tr" type="number" min="0"></label>
+<label for="b-do">CNX–BKK flight<input id="b-do" type="number" min="0"></label>
+<label for="b-gr">Pouch / water gun<input id="b-gr" type="number" min="0"></label>
+<label for="b-in">Travel insurance<input id="b-in" type="number" min="0"></label>
+<label for="b-f">Intl flight SFO–BKK<input id="b-f" type="number" min="0"></label>
+</form><p class="meta" style="margin-top:14px">Estimated total (incl. flights)</p><div class="total" id="tot" aria-live="polite">$0</div>
+<p class="meta" id="sub" style="margin-top:8px"></p>
+<p class="meta" style="margin-top:8px">All estimates. Guide range excl. flights: $1,000–1,500 mid-range, $2,000–3,000 comfortable. Grand total roughly $1,700–2,700 mid / $2,700–4,200 comfortable.</p></div>
+</section>
+<section class="sec"><h2>Links</h2><div class="ctrl">
+<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/travel/flights?q=SFO%20to%20BKK">Google Flights ↗</a>
+<a class="btn" target="_blank" rel="noopener" href="https://tdac.immigration.go.th/">TDAC arrival card ↗</a>
+<a class="btn" target="_blank" rel="noopener" href="https://www.tourismthailand.org/">Tourism Thailand ↗</a></div></section>
+</main>
+<script src="events.js"></script><script src="common.js"></script><script>
+(function(){
+const open=new Date(2027,3,10,0,0);
+function tick(){let ms=Math.max(0,open-new Date());const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60;
+[["cd-d",d],["cd-h",h],["cd-m",m]].forEach(([id,v])=>document.getElementById(id).firstChild.nodeValue=v)}
+tick();setInterval(tick,30000);
+const trip=EMORDES_EVENTS.find(e=>e.id==="songkran-trip");
+document.getElementById("addTrip").onclick=()=>EM.download("songkran-2027.ics",EM.ics(EMORDES_EVENTS.filter(e=>e.id.startsWith("songkran"))));
+document.getElementById("gTrip").href=EM.gcal(trip);
+const items=[["Flights SFO–BKK","by Jan 10"],["Chiang Mai stay (old city)","by Dec 15"],["Bangkok stay (Silom)","by Jan 15"],["CNX–BKK flight Apr 16","by Feb 1"],["Passport valid 6 mo past Apr 23","check now"],["TDAC arrival card","Apr 7–10"],["Travel insurance","by Mar 15"],["Waterproof phone pouch","Apr"],["Quick-dry clothes","Apr"],["Elephant sanctuary booked","by Mar 1"],["Baht + no-foreign-fee card","Apr"]];
+const K="emordes-songkran-check";let st={};try{st=JSON.parse(localStorage.getItem(K))||{}}catch(e){}
+const cl=document.getElementById("cl");cl.innerHTML=items.map(([t,d],i)=>`<label><input type="checkbox" data-i="${i}" ${st[i]?"checked":""}><span style="flex:1">${EM.esc(t)}</span><span class="meta">${d}</span></label>`).join("");
+cl.onchange=e=>{st[e.target.dataset.i]=e.target.checked;localStorage.setItem(K,JSON.stringify(st))};
+const P={mid:{"b-cl":35,"b-bl":40,"b-fo":20,"b-ni":200,"b-ac":100,"b-tr":80,"b-do":60,"b-gr":25,"b-in":60,"b-f":950},
+com:{"b-cl":80,"b-bl":100,"b-fo":45,"b-ni":450,"b-ac":200,"b-tr":150,"b-do":80,"b-gr":35,"b-in":100,"b-f":1200}};
+const v=id=>+document.getElementById(id).value||0;
+function calc(){const ex=v("b-cl")*6+v("b-bl")*7+v("b-fo")*14+v("b-ni")+v("b-ac")+v("b-tr")+v("b-do")+v("b-gr")+v("b-in");
+document.getElementById("tot").textContent="$"+(ex+v("b-f")).toLocaleString();document.getElementById("sub").textContent="Excl. intl flight: $"+ex.toLocaleString()}
+function set(k){Object.entries(P[k]).forEach(([id,x])=>document.getElementById(id).value=x);
+document.getElementById("t-mid").setAttribute("aria-pressed",k==="mid");document.getElementById("t-com").setAttribute("aria-pressed",k==="com");calc()}
+document.getElementById("t-mid").onclick=()=>set("mid");document.getElementById("t-com").onclick=()=>set("com");
+document.getElementById("calc").oninput=calc;set("mid");
+})();
+</script></body></html>

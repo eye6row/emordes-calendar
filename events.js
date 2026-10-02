@@ -25,7 +25,16 @@ window.EMORDES_EVENTS = [
     links: [{label:"Case lookup",url:"https://odyportal-ext.sanmateocourt.org/portal-external"}] },
   { id: "songkran", title: "Songkran (Thai New Year)", start: "2027-04-13", end: "2027-04-15", category: "personal",
     location: "Thailand (Bangkok Silom, Chiang Mai)", notes: "Fun stuff: nationwide water festival. Celebrations often run longer in Chiang Mai. Trip not booked.",
-    links: [{label:"Tourism Thailand",url:"https://www.tourismthailand.org/"}] },
+    links: [{label:"Tourism Thailand",url:"https://www.tourismthailand.org/"},{label:"Trip page",url:"songkran.html"}], trip: "songkran.html" },
+  { id: "songkran-trip", title: "SONGKRAN TRIP (DRAFT)", start: "2027-04-10", end: "2027-04-23", category: "travel", draft: true, featured: true, location: "Chiang Mai + Bangkok, Thailand", notes: "Week 1 Chiang Mai Apr 10-16, week 2 Bangkok Apr 16-23. Nothing booked.", links: [{label:"Trip page",url:"songkran.html"}], trip: "songkran.html" },
+  { id: "songkran-alerts", title: "Set Google Flights alerts SFO-BKK", start: "2026-11-01", category: "travel", draft: true, notes: "Suggested. Track SFO-BKK, target $700-1,200 round trip.", trip: "songkran.html" },
+  { id: "songkran-cnx-stay", title: "Book Chiang Mai stay", start: "2026-12-15", category: "travel", draft: true, notes: "Deadline (suggested). Inside/near old city. Songkran sells out.", trip: "songkran.html" },
+  { id: "songkran-flights", title: "Book SFO-BKK flights", start: "2027-01-10", category: "travel", draft: true, notes: "Deadline (suggested). Fly midweek, can save 15-20%.", trip: "songkran.html" },
+  { id: "songkran-bkk-stay", title: "Book Bangkok stay near Silom", start: "2027-01-15", category: "travel", draft: true, notes: "Deadline (suggested).", trip: "songkran.html" },
+  { id: "songkran-domestic", title: "Book CNX-BKK flight", start: "2027-02-01", category: "travel", draft: true, notes: "Deadline (suggested). Apr 16, ~$40-80.", trip: "songkran.html" },
+  { id: "songkran-sanctuary", title: "Book elephant sanctuary", start: "2027-03-01", category: "travel", draft: true, notes: "Deadline (suggested). Ethical only, ~$70-100.", trip: "songkran.html" },
+  { id: "songkran-insurance", title: "Buy travel insurance", start: "2027-03-15", category: "travel", draft: true, notes: "Deadline (suggested).", trip: "songkran.html" },
+  { id: "songkran-tdac", title: "Passport check + TDAC", start: "2027-04-07", category: "travel", draft: true, notes: "Passport valid 6 months past Apr 23, 2027. Submit Thailand Digital Arrival Card within 3 days before arrival.", trip: "songkran.html" },
   { id: "cannes-lineup", title: "Cannes lineup announced", start: "2027-04-15", category: "travel", draft: true,
     notes: "Official selection announced in April 2027 (exact date TBA)." }
 ];

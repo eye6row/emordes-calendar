@@ -55,3 +55,4 @@ table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid var(--li
 html,body{overflow-x:hidden}.day,.dow{min-width:0}.grid{grid-template-columns:repeat(7,minmax(0,1fr))}
 .days{grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr))}.top nav{flex-wrap:wrap;justify-content:flex-end}
 .calc label{grid-template-columns:1fr 90px}.hero p,.meta{overflow-wrap:anywhere}td{overflow-wrap:anywhere}
+button[aria-pressed="true"]{background:#D64541;color:#fff;border-color:#D64541}
