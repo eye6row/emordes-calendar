@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><script>try{if(localStorage.getItem("emordes-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SONGKRAN 2027 · EMORDES CALENDAR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"></head><body>
 <header class="top"><a href="index.html" aria-label="Emordes Calendar home"><img src="wordmark.png" alt="emordes"></a>
-<nav aria-label="Main"><a href="index.html">Calendar</a><a href="cannes.html" >Cannes 2027</a><a href="songkran.html" aria-current="page">Songkran 2027</a></nav></header>
+<nav aria-label="Main"><a href="index.html">Calendar</a><a href="cannes.html" >Cannes 2027</a><a href="songkran.html" aria-current="page">Songkran 2027</a><button class="themet" type="button" aria-label="Toggle light mode" onclick="(function(b){var r=document.documentElement,l=r.dataset.theme!=='light';if(l)r.dataset.theme='light';else delete r.dataset.theme;try{localStorage.setItem('emordes-theme',l?'light':'dark')}catch(e){}b.textContent=l?'Dark':'Light';b.setAttribute('aria-pressed',l)})(this)">Light</button><script>if(document.documentElement.dataset.theme==="light"){var t=document.currentScript.previousElementSibling;t.textContent="Dark";t.setAttribute("aria-pressed","true")}</script></nav></header>
 <main>
 <section class="hero"><p class="meta">Trip file 002 · <span class="draftb">DRAFT / SUGGESTED</span> · Songkran, Thai New Year · Apr 13–15, 2027</p>
 <h1>Songkran<br><em>2027</em></h1>
 <p class="meta" style="margin-top:14px">Countdown to wheels down · Apr 10, 2027</p>
 <div class="count" aria-live="off"><div id="cd-d">—<small>Days</small></div><div id="cd-h">—<small>Hours</small></div><div id="cd-m">—<small>Minutes</small></div></div>
-<p style="margin-top:22px;max-width:640px;line-height:1.6;color:#ccc">Two weeks, Apr 10–23. Week one in Chiang Mai for the most intense Songkran in Thailand, week two in Bangkok for Silom nightlife. Plan via Joanne. Nothing booked yet.</p>
+<p style="margin-top:22px;max-width:640px;line-height:1.6;color:var(--soft)">Two weeks, Apr 10–23. Week one in Chiang Mai for the most intense Songkran in Thailand, week two in Bangkok for Silom nightlife. Plan via Joanne. Nothing booked yet.</p>
 <div class="ctrl" style="margin-top:16px"><button id="addTrip">Download trip .ics</button><a class="btn" id="gTrip" target="_blank" rel="noopener">+ Google Calendar</a><a class="btn" href="index.html?m=2027-04">See in calendar →</a></div>
 </section>
 <section class="sec"><h2>Itinerary <span>/ Draft</span></h2><div class="days">

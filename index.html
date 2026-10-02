@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><script>try{if(localStorage.getItem("emordes-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EMORDES CALENDAR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"></head><body>
 <header class="top"><a href="index.html" aria-label="Emordes Calendar home"><img src="wordmark.png" alt="emordes"></a>
-<nav aria-label="Main"><a href="index.html" aria-current="page">Calendar</a><a href="cannes.html">Cannes 2027</a><a href="songkran.html">Songkran 2027</a></nav></header>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Calendar</a><a href="cannes.html">Cannes 2027</a><a href="songkran.html">Songkran 2027</a><button class="themet" type="button" aria-label="Toggle light mode" onclick="(function(b){var r=document.documentElement,l=r.dataset.theme!=='light';if(l)r.dataset.theme='light';else delete r.dataset.theme;try{localStorage.setItem('emordes-theme',l?'light':'dark')}catch(e){}b.textContent=l?'Dark':'Light';b.setAttribute('aria-pressed',l)})(this)">Light</button><script>if(document.documentElement.dataset.theme==="light"){var t=document.currentScript.previousElementSibling;t.textContent="Dark";t.setAttribute("aria-pressed","true")}</script></nav></header>
 <main class="wrap">
 <a class="feature" href="cannes.html"><span><span class="meta">Featured trip · Draft</span><br><b>CANNES 2027</b></span><span class="meta">May 14–19, 2027 · SFO → NCE · Festival 80th →</span></a>
 <div class="bar"><div><p class="meta">Emordes Calendar · <span id="year"></span></p><h1 id="title" aria-live="polite"></h1></div>
