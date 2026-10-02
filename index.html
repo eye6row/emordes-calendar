@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EMORDES CALENDAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="top"><a href="index.html" aria-label="Emordes Calendar home"><img src="wordmark.png" alt="emordes"></a>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Calendar</a><a href="cannes.html">Cannes 2027</a></nav></header>
+<main class="wrap">
+<a class="feature" href="cannes.html"><span><span class="meta">Featured trip · Draft</span><br><b>CANNES 2027</b></span><span class="meta">May 14–19, 2027 · SFO → NCE · Festival 80th →</span></a>
+<div class="bar"><div><p class="meta">Emordes Calendar · <span id="year"></span></p><h1 id="title" aria-live="polite"></h1></div>
+<div class="ctrl"><button id="prev" aria-label="Previous month">←</button><button id="today">Today</button><button id="next" aria-label="Next month">→</button>
+<button id="vMonth">Month</button><button id="vList">List</button><button id="jump">May 2027</button><button id="add">+ Add</button><button id="export">Export .ics</button></div></div>
+<div id="out"></div>
+<div class="legend meta"><span><i class="c-travel"></i>Travel</span><span><i class="c-work"></i>Work</span><span><i class="c-studio"></i>Studio</span><span><i class="c-personal"></i>Personal</span><span>▨ Striped = draft</span></div>
+</main>
+<script src="events.js"></script><script src="common.js"></script><script src="app.js"></script></body></html>
